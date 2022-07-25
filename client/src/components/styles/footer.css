@@ -1,0 +1,147 @@
+/* css for footer */
+.footer {
+    box-sizing: border-box;
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+    overflow: hidden;
+}
+
+.footer-child {
+    width: 20%;
+}
+
+/* css for footer title */
+.footer .title-container {
+    align-items: flex-start;
+}
+
+.footer .title {
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.4s;
+    color: #0061ff;
+}
+
+.footer .title > span {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer .title:hover {
+    color: #fff;
+}
+
+.footer .title:hover > span {
+    color: #0061ff;
+}
+
+/* css for quick links */
+.quick-links {
+    list-style: none;
+    margin-left: 10px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.quick-links li {
+    cursor: pointer;
+    transition: 0.4s;
+    color: #fff;
+    margin-top: 5px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.quick-links li:hover {
+    margin-left: 5px;
+    color: #0061ff;
+}
+
+/* css for content details */
+.footer .contact-details {
+    margin-top: 15px;
+}
+
+.footer .contact-details > div {
+    margin-bottom: 5px;
+}
+
+.footer .contact-details > div > p {
+    transition: 0.4s;
+}
+
+.footer .contact-details > div:hover > p {
+    color: #0061ff;
+}
+
+/* css for socail links */
+
+.footer .social-links {
+    width: auto !important;
+}
+
+.footer .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.footer .social-icon {
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 20%;
+    aspect-ratio: 1/1;
+    @media: (aspect-ratio: 1/1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.footer .social-icon:hover {
+    background-color: #0061ff;
+    border: 1px solid #0061ff;
+    color: #000;
+}
+
+.my-profile-link {
+    color: inherit;
+    transition: 0.2s;
+}
+
+.my-profile-link:hover {
+    color: #fff;
+}
+
+/* mobile responsive css for footer & copyright */
+@media only screen and (max-width: 480px) {
+    .footer {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer-child {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    .footer-container .copyright-container .copyright-text {
+        font-size: 8px !important;
+    }
+
+    .footer-container .copyright-container .my-profile-link-container {
+        font-size: 6px !important;
+    }
+}

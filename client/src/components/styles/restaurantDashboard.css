@@ -1,0 +1,443 @@
+.restaurant-dashboard > .container {
+    margin: auto;
+    margin-top: 11vh;
+    width: 80%;
+    padding-top: 20px;
+}
+
+/* css for title */
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: #0061ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.title-container .btn {
+    width: 150px;
+}
+
+/* css for form  */
+.restaurant-dashboard .form {
+    margin-top: 20px;
+}
+
+.restaurant-dashboard .input-feild {
+    border: 1px solid gray;
+    width: 42vw;
+    margin-bottom: 20px;
+}
+
+.form-model {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    z-index: 20;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.4s;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.form-container {
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    background-color: white;
+    width: auto;
+    height: auto;
+    transition: 0.2s;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.form-container .btn {
+    width: 30%;
+}
+
+.form-model .close-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* css for food items */
+.food-items-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: 0.4s;
+}
+
+.food-item {
+    margin-bottom: 30px;
+    transition: 0.4s;
+    position: relative;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.food-item-image {
+    width: 100%;
+}
+
+.food-item-details {
+    padding: 10px 8%;
+    color: #0061ff;
+}
+
+.food-item-details .title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.food-item-details > P {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+.price-quantity-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.price-quantity-container h5 {
+    font-size: 16px;
+}
+
+.price-quantity-container p {
+    margin-top: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+.btn-container {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    transition: 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.update-btn {
+    border: none;
+    background-color: transparent;
+    color: #0061ff;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.update-btn:active {
+    color: #4575c3;
+}
+
+.delete-btn {
+    border: none;
+    background-color: transparent;
+    color: #992020;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.delete-btn:active {
+    color: #bd4545;
+}
+
+.food-item:hover .btn-container {
+    visibility: visible;
+    opacity: 1;
+    background: linear-gradient(#00000092, transparent);
+}
+
+/* css for orders */
+.orders-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.restaurant-dashboard .order {
+    width: auto !important;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.restaurant-dashboard .order-img {
+    width: 150px;
+}
+
+.restaurant-dashboard .btns-container {
+    margin-left: 10px;
+}
+
+.restaurant-dashboard .status-btn {
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+.accept-btn {
+    border: 1px solid green;
+    color: green;
+}
+
+.accept-btn:hover {
+    background-color: green;
+    color: #fff;
+}
+
+.reject-btn {
+    border: 1px solid red;
+    color: red;
+}
+
+.reject-btn:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.restaurant-dashboard .mob-btn-container {
+    visibility: hidden;
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.restaurant-dashboard .mob-btn-container > button {
+    font-size: 25px;
+}
+
+.mob-btns-container {
+    display: none;
+}
+
+/* mobile responsive css for .restaurant dashboard*/
+@media only screen and (max-width: 480px) {
+    .restaurant-dashboard > .container {
+        padding-top: 10px !important;
+    }
+
+    /* mobile responsive css for food items*/
+    .restaurant-dashboard .food-items-container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .restaurant-dashboard .food-item {
+        width: 100%;
+    }
+
+    .restaurant-dashboard .mob-btn-container {
+        visibility: visible;
+        display: flex;
+    }
+
+    .restaurant-dashboard .food-item .btn-container {
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+
+    .restaurant-dashboard .food-item-details .title {
+        font-size: 20px;
+        letter-spacing: 0.5px;
+    }
+
+    .restaurant-dashboard .food-item-details .desc {
+        font-size: 12px !important;
+        letter-spacing: normal !important;
+    }
+
+    .restaurant-dashboard .food-item .price-quantity-container {
+        margin-top: 5px;
+    }
+
+    .restaurant-dashboard .food-item .price-quantity-container > div > p {
+        letter-spacing: normal !important;
+        font-size: 12px !important;
+    }
+
+    /* mobile responsive css for form*/
+    .restaurant-dashboard .form-container {
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    .restaurant-dashboard .input-feild {
+        width: 100%;
+    }
+
+    .restaurant-dashboard .form > div {
+        width: 100% !important;
+    }
+
+    .restaurant-dashboard .form .btn {
+        width: 100%;
+    }
+
+    /* mobile responsive css for title*/
+    .restaurant-dashboard .title-container .title {
+        font-size: 30px;
+    }
+
+    .restaurant-dashboard .title-container .btn {
+        width: auto;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    /* mobile responsive css for orders*/
+    .restaurant-orders {
+        width: 100% !important;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .restaurant-orders .title-container {
+        width: 90%;
+    }
+
+    .restaurant-orders .title-container .title {
+        font-size: 22px;
+    }
+
+    .restaurant-orders .filter-container > label {
+        font-size: 14px !important;
+    }
+
+    .restaurant-orders .orders-container {
+        width: 90%;
+    }
+
+    .restaurant-orders .order-parent {
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 5px gray;
+        width: 100% !important;
+        border-radius: 10px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .restaurant-orders .order {
+        background-color: transparent !important;
+        padding: 10px 10px !important;
+        margin-bottom: 0px !important;
+        box-shadow: none !important;
+    }
+
+    .restaurant-orders .order .order-img {
+        width: 30% !important;
+        margin-right: 10px !important;
+    }
+
+    .restaurant-orders .order-details .title {
+        font-size: 18px;
+    }
+
+    .restaurant-orders .order-details > .customer-details {
+        margin-top: 3px !important;
+    }
+
+    .restaurant-orders .order-details > .customer-details > h4 {
+        font-size: 8px !important;
+    }
+
+    .restaurant-orders .order-details > .customer-details > div > p {
+        font-size: 8px !important;
+        width: auto !important;
+    }
+
+    .restaurant-orders .order-details > .customer-details > div > p:last-child {
+        text-align: right;
+        width: auto !important;
+    }
+
+    .restaurant-orders .order-details > div:last-child {
+        width: 100% !important;
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: space-between !important;
+    }
+
+    .restaurant-orders .order-details > div:last-child > h4 {
+        width: 50%;
+        font-size: 12px !important;
+    }
+
+    .restaurant-orders .order-details > div:last-child > h4:last-child {
+        flex-grow: 1;
+    }
+
+    .restaurant-orders .order-details > div:last-child > h4 > span {
+        font-size: 8px !important;
+        font-family: sans-serif !important;
+        letter-spacing: normal !important;
+    }
+
+    .restaurant-orders .btns-container {
+        display: none !important;
+    }
+
+    .restaurant-orders .mob-btns-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .restaurant-orders .mob-btns-container .status-btn {
+        width: 50%;
+        border-radius: 0px;
+        margin: 0px !important;
+        color: #fff;
+    }
+    .restaurant-orders .mob-btns-container .accept-btn {
+        background-color: green;
+    }
+    .restaurant-orders .mob-btns-container .reject-btn {
+        background-color: red;
+    }
+}

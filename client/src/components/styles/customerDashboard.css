@@ -1,0 +1,543 @@
+/* css for customer  banner */
+.customer-banner {
+    width: 100%;
+    height: 95vh;
+    background-image: url('../images/customer-banner.jpg');
+    background-size: cover;
+}
+
+/* css for container */
+.customer-dashboard .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10%;
+}
+
+/* css for title */
+.customer-dashboard .container .title {
+    font-size: 30px;
+}
+
+/* css for .section-2 */
+.section-2 {
+    margin-top: 10vh !important;
+    background-color: #0061ff;
+    color: #fff;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+}
+
+.section-2 > .card {
+    text-align: center;
+    width: 400px;
+}
+
+/* css for restaurants & food items */
+.top-restaurant-container {
+    color: #0061ff;
+}
+
+.top-food-items-container {
+    color: #fff;
+    background-color: #0061ff;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.top-food-items-container .title {
+    color: #fff;
+}
+
+.top-restaurants,
+.top-food-items {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.restaurant-card,
+.food-item-card {
+    background-color: #fff;
+    color: #0061ff;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.restaurant-card .btn {
+    width: 100% !important;
+}
+
+.restaurant-card-img,
+.food-item-card-img {
+    width: 100%;
+}
+
+.restaurant-card-details,
+.food-item-card-details {
+    padding: 10px 30px;
+}
+
+.restaurant-card-details p,
+.food-items-card-details p {
+    margin-bottom: 5px;
+}
+
+.timings-container p,
+.price-quantity-container p {
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2px;
+}
+
+.food-items,
+.restaurants {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.food-item-card,
+.restaurant-card {
+    margin-bottom: 30px;
+}
+
+.food-item-card .btn {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.food-items-container .btns-container,
+.top-food-items-container .btns-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* css for my cart & my orders */
+
+.my-cart-container,
+.my-orders-container {
+    margin-top: 15vh !important;
+    min-height: 85vh;
+}
+
+.my-cart-items {
+    margin-top: 20px;
+}
+
+.my-cart-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    transition: 0.4s;
+}
+
+.cart-item-img {
+    width: 15%;
+    border-radius: 50%;
+    margin-right: 3%;
+}
+
+.cart-item-details {
+    color: #0061ff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer-dashboard .delete-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* css for place order form */
+.order-form-container-parent {
+    margin: 0px !important;
+    color: #0061ff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.order-form-container {
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+    padding: 30px 50px;
+    text-align: center;
+    width: 35%;
+}
+
+.order-form-container .title {
+    font-size: 30px !important;
+    margin-bottom: 15px;
+}
+
+.order-form-container .input-feild {
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.order-form-container .btn {
+    width: 100%;
+}
+
+/* css for orders */
+.orders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.order {
+    width: 70%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 10px gray;
+    color: #0061ff;
+    position: relative;
+}
+
+.order-img {
+    width: 15%;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+/* css for restaurant details page */
+.customer-dashboard .restaurant-details-container {
+    margin-top: 15vh !important;
+}
+
+.restaurant-details-container-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-dashboard .restaurant-details-container-child > .restaurant-img {
+    width: 30%;
+    height: auto !important;
+}
+
+.customer-dashboard .restaurant-details-container-child > .restaurant-details {
+    margin-left: 40px;
+    width: 100%;
+    color: #0061ff;
+}
+
+.customer-dashboard
+    .restaurant-details-container-child
+    > .restaurant-details
+    > .title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.restaurant-details-msg-box {
+    position: fixed;
+}
+
+/* mobile responsive css for customer dashboard */
+@media only screen and (max-width: 480px) {
+    /* mobile responsive css for customer banner*/
+    .customer-banner {
+        height: 60vh;
+        background-position: center;
+    }
+
+    /* mobile responsive css for section 2*/
+    .customer-dashboard .section-2 {
+        display: flex;
+        flex-direction: column !important;
+        padding: 40px 20px !important;
+        height: auto !important;
+        box-sizing: border-box;
+    }
+
+    .customer-dashboard .section-2 .card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .customer-dashboard .section-2 .card svg {
+        font-size: 40px !important;
+    }
+
+    .customer-dashboard .section-2 .card > h1 {
+        font-size: 18px;
+    }
+
+    .customer-dashboard .section-2 .card > p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* mobile responsive css for container*/
+    .customer-dashboard .container {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    /* mobile responsive css for title*/
+    .customer-dashboard .container .title {
+        font-size: 24px;
+    }
+
+    .customer-dashboard .container .title-container h4 {
+        font-size: 14px;
+    }
+
+    /* mobile responsive css for food items & restaurants */
+    .customer-dashboard .top-restaurants,
+    .customer-dashboard .top-food-items {
+        display: flex;
+        flex-direction: column !important;
+        flex-wrap: wrap;
+    }
+
+    .customer-dashboard .restaurant-card,
+    .customer-dashboard .food-item-card {
+        width: 100%;
+    }
+
+    .customer-dashboard .order-form-container-parent {
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .customer-dashboard .order-form-container {
+        width: 80%;
+        box-sizing: border-box;
+        padding: 20px 30px;
+    }
+
+    .my-orders-container,
+    .my-cart-container {
+        margin-top: 10vh !important;
+        padding: 0px !important;
+    }
+
+    .my-orders-container .title,
+    .my-cart-container .title {
+        margin-left: 10% !important;
+    }
+
+    .customer-dashboard .orders,
+    .my-cart-items {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .customer-dashboard .order,
+    .my-cart-item {
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    .customer-dashboard .order-img,
+    .cart-item-img {
+        margin-right: 10px;
+        width: 20% !important;
+    }
+
+    .customer-dashboard .order-details > h1 {
+        font-size: 18px !important;
+    }
+
+    .customer-dashboard .order-details > h1 > span:first-child {
+        font-size: 8px !important;
+    }
+
+    .customer-dashboard .order-details > h1 > span:last-child {
+        font-size: 12px !important;
+    }
+
+    .customer-dashboard .order-details > p {
+        font-size: 8px !important;
+        margin-top: 0px !important;
+    }
+
+    .customer-dashboard .order-details > div > h4 {
+        font-size: 10px;
+    }
+
+    .customer-dashboard .delete-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+
+    .customer-dashboard .delete-btn > svg {
+        font-size: 18px !important;
+    }
+
+    /* mobile responsive css for my cart & my orders*/
+    .my-cart-container,
+    .my-orders-container {
+        min-height: 80vh;
+    }
+
+    .customer-dashboard .cart-item-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .customer-dashboard .cart-item-details > div:first-child {
+        width: 100% !important;
+    }
+    .customer-dashboard .cart-item-details > div:first-child > h1 {
+        font-size: 18px !important;
+    }
+    .customer-dashboard .cart-item-details > div:first-child > p {
+        font-size: 10px !important;
+    }
+
+    .customer-dashboard .price-quantity-container {
+        width: 100% !important;
+        margin-top: 5px !important;
+    }
+    .customer-banner .price-quantity-container .price-container,
+    .customer-dashboard .price-quantity-container .quantity-container {
+        width: 50%;
+    }
+
+    .customer-dashboard .price-quantity-container > div > h1 {
+        font-size: 14px !important;
+    }
+
+    .customer-dashboard .price-quantity-container > div > p {
+        font-size: 10px !important;
+    }
+
+    .customer-dashboard .price-quantity-container > div > p > button {
+        font-size: 10px !important;
+    }
+
+    .check-out {
+        margin-top: 0px !important;
+        width: 80% !important;
+    }
+
+    .check-out .price {
+        margin-right: 0px !important;
+        text-align: center;
+    }
+
+    .check-out .btn {
+        font-size: 12px;
+        width: auto !important;
+        padding: 10px 20px;
+    }
+
+    /* mobile responsive css restaurant details */
+    .customer-dashboard .restaurant-details-container {
+        margin-top: 80px !important;
+        width: 100%;
+        padding: 0px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .customer-dashboard .restaurant-details-container-child {
+        width: 90%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 3px gray;
+        padding: 10px 10px;
+        box-sizing: border-box;
+    }
+
+    .customer-dashboard .restaurant-details-container-child .restaurant-img {
+        width: 30%;
+    }
+
+    .customer-dashboard
+        .restaurant-details-container-child
+        .restaurant-details {
+        margin-left: 10px;
+    }
+
+    .customer-dashboard
+        .restaurant-details-container-child
+        .restaurant-details
+        .title {
+        font-size: 18px !important;
+        margin-bottom: 5px;
+    }
+
+    .customer-dashboard
+        .restaurant-details-container-child
+        .restaurant-details
+        > h2 {
+        font-size: 14px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .customer-dashboard
+        .restaurant-details-container-child
+        .restaurant-details
+        > p {
+        font-size: 10px !important;
+    }
+
+    .customer-dashboard .restaurant-details-container-child .timings-conainer {
+        width: 100%;
+        margin-top: 5px !important;
+    }
+    .customer-dashboard
+        .restaurant-details-container-child
+        .timings-conainer
+        > div
+        > h2 {
+        font-size: 12px !important;
+    }
+
+    .customer-dashboard
+        .restaurant-details-container-child
+        .timings-conainer
+        > div
+        > p {
+        font-size: 10px !important;
+        margin-top: auto !important;
+    }
+}
