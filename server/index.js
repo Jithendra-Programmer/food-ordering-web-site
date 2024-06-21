@@ -15,7 +15,7 @@ const cart = require('./controllers/cart');
 // mongo atlas culster uri
 
 const uri =
-    'mongodb+srv://Jithendra:pass123@blue-plates.ehlxy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+    'mongodb+srv://jithendra:pass123@cluster0.7b8mpf9.mongodb.net/db';
 
 // connection to mongo
 mongoose
